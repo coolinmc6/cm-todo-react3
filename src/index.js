@@ -19,7 +19,7 @@ ReactDOM.render(
 		<BrowserRouter>
 			<Switch>
 				<Route path="/cm-react-todo3/about" component={About} />
-				<Route path="/cm-react-todo3/" component={App} />
+				<Route exact path="/cm-todo-react3/" component={App} />
 				
 			</Switch>
 		</BrowserRouter>
