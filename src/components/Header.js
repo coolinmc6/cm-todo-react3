@@ -20,7 +20,7 @@ class Header extends Component {
 		return (
 			<div>
 				<Link to="/cm-todo-react3">Home</Link> &nbsp;
-				<Link to="/cm-react-todo3/about">About</Link>  &nbsp;
+				<Link to="/cm-todo-react3/about">About</Link>  &nbsp;
 				{this.authButton()}
 				
 				
