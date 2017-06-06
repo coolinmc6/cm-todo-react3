@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -8,7 +8,6 @@ class App extends Component {
       <div>
         <h1 className="center">Something Awesome Coming Soon...</h1>
         <div  className="center">
-          <Link to="/cm-react-todo3/about">About</Link>  
         </div>
       </div>
     );
