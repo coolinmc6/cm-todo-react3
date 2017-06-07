@@ -10,10 +10,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
 import About from './components/About';
 import Header from './components/Header'
+import requireAuth from './components/require_authentication';
+import NoteList from './components/NoteList';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
+
+
 
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>	
@@ -22,7 +26,9 @@ ReactDOM.render(
 			<Header />
 			<Switch>
 				<Route path="/cm-todo-react3/about" component={About} />
+				<Route path="/cm-todo-react3/notes" component={requireAuth(NoteList)} />
 				<Route exact path="/cm-todo-react3/" component={App} />
+
 				
 			</Switch>
 			</div>
